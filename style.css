@@ -1,0 +1,335 @@
+/*****************IMPORTS*****************/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@600&family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+*{
+    padding:0;
+    margin: 0;
+}
+
+
+
+/********************NAVBAR*****************/
+.navbar{
+    background-color: rgb(248, 233, 246);
+}
+.logo{
+    margin-top: 30px;
+}
+/*******TO PUT LOGO TO CENTER*************/
+.navbar-brand-centered {
+    position: absolute;
+    left: 42%;
+    display: block;
+    width: 160px;
+    text-align: center;
+}
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -90px;
+}
+.navbar-nav a{
+    font-size: 1.35rem;
+    margin: 0.65rem;
+    color: rgb(54, 41, 6)!important;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.nav-button{
+    font-size:1.35rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:0.2rem 1.4rem;
+    color: rgb(54, 41, 6);
+    background-color: white;
+    border: 3px solid  rgb(54, 41, 6);
+    border-radius: 19px;
+    margin:0 1rem;
+    margin-top: 0.8rem;
+}
+
+/******************MAIN HEADLINE***************/
+.main-heading{
+    background-color: rgb(248, 233, 246);
+
+}
+.headline-button{
+    font-size:1.35rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:0.4rem 1.4rem;
+    color:white;
+    background-color:rgb(223, 170, 25) ;
+    border: 3px solid rgb(223, 170, 25);
+    border-radius: 19px;
+    margin-top: 0.8rem;
+    margin-bottom: 7rem;
+}
+.headline{
+    margin: 0 8rem;
+    padding-top:3rem;
+    padding-bottom: 1rem;
+    color: rgb(54, 41, 6);
+    font-family: 'Noto Serif', serif;
+}
+.headline-text{
+    margin: 0 18rem;
+font-size: 1.3rem;
+font-weight: 700;
+font-family: 'Roboto Condensed', sans-serif;
+color: rgb(100, 87, 50);
+
+}
+
+/******************GLIMPSE OF PHOTOS******************/
+.wedding-photo{
+    width:360px;
+    height:250px;
+    border-radius: 20px;
+    transform: translateY(-50px);
+    margin: 0 1.8rem;
+}
+.content-desktop{
+    display:block;
+}
+#carouselExampleControls{
+display:none;
+}
+
+/*************************MAIN SECTION********************/
+.main-photo{
+    width:24rem;
+    height:30rem;
+    border-radius: 15px;
+    transform: translate(150px,85px);
+    
+    z-index: 60;
+    position: absolute;
+}
+.main-text{
+    background-color: rgb(226, 235, 150);
+    border-radius: 25px;
+    z-index: 1;
+}
+.sub-text{
+    color: rgb(145, 107, 5);
+    margin: 3rem 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-text h2{
+margin:1.3rem 3rem;
+padding: 0.2rem 1.6rem;
+font-family: 'Noto Serif', serif;
+color: rgb(66, 56, 29);
+}
+h5{
+    margin: 1.5rem 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(100, 87, 50);
+font-weight: 600;
+padding: 0.2rem 3rem;
+justify-content: center;
+}
+.main-button{
+        font-size:1.3rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding:0.4rem 2rem;
+        color:rgb(66, 56, 29);
+        background-color:rgb(248, 248, 247) ;
+        border-radius: 19px;
+        border:3px solid white;
+        margin-top: 1.3rem;
+        margin-bottom: 7rem;
+        font-family: 'Roboto Condensed', sans-serif;
+justify-content: center;
+}
+
+/***************************FEATURES******************/
+.features{
+    background-color: rgb(226, 235, 150);
+    margin: 0;
+    margin-top: 6rem;
+}
+.feature-sub-text{
+    color: rgb(145, 107, 5);
+    margin: 1rem 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.feature-heading{
+    margin-bottom: 0.1rem;
+font-family: 'Noto Serif', serif;
+color: rgb(66, 56, 29);
+}
+.featured-image{
+    border-radius: 15px;
+width: 20rem;
+height:28rem;
+transform: translateY(50px);
+
+}
+.featured-row{
+    margin-top:2.5rem;
+    margin-left: 6rem;
+}
+.circle{
+    margin-left: 5rem;
+    width: 3rem;
+    height: 3rem;
+
+}
+.features-list{
+    font-size: 1.6rem;
+    font-family: 'Noto Serif', serif;
+color: rgb(66, 56, 29);
+margin: 0.7rem 2.5rem;
+}
+.feature-description{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(66, 56, 29);
+font-size: 1rem;
+margin:0.7rem 1rem;
+width:17rem;
+}
+.upload{
+    width: 2rem;
+    height: 2rem;
+    transform: translate(100px,10px);
+}
+
+@media screen and (max-width:768px){
+    html,body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    #carouselExampleControls{
+        display: block;
+    }
+    .content-desktop{
+        display:none!important;
+
+    }
+    .navbar-nav a{
+        font-size: 1.1rem;
+        margin: 0.1rem 0;
+       float: right;
+    }
+    .navbar-brand-centered {
+        position: sticky;
+        /* right: 69%; */
+        width: 50px;
+        left:0;
+    }
+    .nav-button{
+        float: right;
+        margin:0;
+        padding:0.1rem 1.2rem;
+        font-size: 1.1rem;
+    }
+    .logo{
+        width:100px;
+        margin-top: 5px;
+        right:0;
+    }
+    .headline{
+        margin: 0 2rem;
+        padding-top:0.1rem;
+        padding-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+    .headline-text{
+        margin: 0 2.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Cormorant Unicase', serif;
+    color: rgb(66, 56, 29);
+    
+    }
+    .headline-button{
+        font-size:0.9rem;
+        padding:0.2rem 0.7rem;
+        border-radius: 19px;
+        margin-top: 0.8rem;
+        margin-bottom: 3rem;
+    }
+    .carousel-img
+{
+    margin:1.5rem auto;
+    width:29rem;
+    height:18rem;
+border-top: 5px outset rgb(231, 173, 13);
+border-bottom:  5px inset rgb(231, 173, 13);
+
+}
+.carousel-indicators li{
+    position: relative;
+    bottom: -28px;
+    width: 15px!important;
+    height: 15px!important;
+  border-radius: 50%!important;
+  background-color: rgb(66, 56, 29)!important;
+
+}
+.main-text{
+    margin: 1.3rem 0.8rem;
+    margin-right: 1rem;
+    /* position: relative; */
+    padding-bottom: 0;
+}
+.sub-text{
+    margin: 2rem 0;
+}
+.main-text h2{
+    margin:0.5rem 0.6rem;
+    padding: 0.1rem 0.3rem;
+    font-style: 1.5rem;
+    }
+.main-photo{
+    width:19rem;
+    height:24rem;
+    transform: translate(-47%,120%);
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 60;
+    border-radius: 3rem;
+    position: absolute;
+}
+h5{
+    margin: 1.5rem 1.5rem;
+    padding: 0.2rem 1.5rem;
+
+}
+.signup{
+    border-radius: 2rem;
+    text-align: center;
+}
+.features{
+    margin-top: 20rem;
+}
+.feature-sub-text{
+    text-align: center;
+}
+.feature-heading{
+    text-align: center;
+    font-size: 2rem;
+}
+.circle{
+    margin-left: 0rem;
+    width: 3rem;
+    height: 3rem;
+
+}
+.upload{
+    width: 2rem;
+    height: 2rem;
+    transform: translate(30px,10px);
+}
+.features-list{
+margin: 0.7rem 0.7rem;
+}
+.feature-description{
+margin:0.7rem 2rem;
+width:25rem;
+font-size: 0.8rem;
+}
+.featured-image{
+    display: none;
+}
+}
